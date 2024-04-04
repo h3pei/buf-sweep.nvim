@@ -8,7 +8,7 @@ local function is_sweepable(bufnr, force)
     return false
   end
 
-  if not vim.api.nvim_buf_get_option(bufnr, "buflisted") then
+  if not vim.api.nvim_get_option_value("buflisted", { buf = bufnr }) then
     return false
   end
 
@@ -16,7 +16,7 @@ local function is_sweepable(bufnr, force)
     return false
   end
 
-  if vim.api.nvim_buf_get_option(bufnr, "modified") and not force then
+  if vim.api.nvim_get_option_value("modified", { buf = bufnr }) and not force then
     return false
   end
 
