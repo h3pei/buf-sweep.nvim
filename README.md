@@ -9,13 +9,13 @@ Inspired by [BufOnly.vim](https://github.com/vim-scripts/BufOnly.vim).
 [packer.nvim](https://github.com/wbthomason/packer.nvim)
 
 ```lua
-use { "mogulla3/buf-sweep.nvim" }
+use { "h3pei/buf-sweep.nvim" }
 ```
 
 [vim-plug](https://github.com/junegunn/vim-plug)
 
 ```vim
-Plug "mogulla3/buf-sweep.nvim"
+Plug "h3pei/buf-sweep.nvim"
 ```
 
 ## Usage
